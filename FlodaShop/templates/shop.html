@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html>
+{% load myfilters %}
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+    <title></title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="/static/assets/img/favicon.ico" type="image/x-icon"/>
+
+    <!-- Google fonts include -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900%7CYesteryear"
+          rel="stylesheet">
+
+    <!-- All Vendor & plugins CSS include -->
+    <link href="/static/assets/css/vendor.css" rel="stylesheet">
+    <!-- Main Style CSS -->
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="/oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Start Header Area -->
+{% include 'div_source/header.html' %}
+<!-- end Header Area -->
+
+<!-- off-canvas menu start -->
+<aside class="off-canvas-wrapper">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+        <div class="btn-close-off-canvas">
+            <i class="lnr lnr-cross"></i>
+        </div>
+
+        <div class="off-canvas-inner">
+            <!-- search box start -->
+            <div class="search-box-offcanvas">
+                <form>
+                    <input type="text" placeholder="Search Here...">
+                    <button class="search-btn"><i class="lnr lnr-magnifier"></i></button>
+                </form>
+            </div>
+            <!-- search box end -->
+
+            <!-- mobile menu start -->
+            <div class="mobile-navigation">
+
+                <!-- mobile menu navigation start -->
+                <nav>
+                    <ul class="mobile-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product-details.html">Product Details</a></li>
+                    </ul>
+                </nav>
+                <!-- mobile menu navigation end -->
+            </div>
+            <!-- mobile menu end -->
+
+            <div class="mobile-settings">
+                <ul class="nav">
+                    <li>
+                        <div class="dropdown mobile-top-dropdown">
+                            <a href="#" class="dropdown-toggle" id="currency" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Currency
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="currency">
+                                <a class="dropdown-item" href="#">$ USD</a>
+                                <a class="dropdown-item" href="#">$ EURO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown mobile-top-dropdown">
+                            <a href="#" class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                My Account
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="myaccount">
+                                <a class="dropdown-item" href="#">my account</a>
+                                <a class="dropdown-item" href="#"> login</a>
+                                <a class="dropdown-item" href="#">register</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- offcanvas widget area start -->
+            <div class="offcanvas-widget-area">
+                <div class="off-canvas-contact-widget">
+                    <ul>
+                        <li><i class="fa fa-mobile"></i>
+                            <a href="#">0123456789</a>
+                        </li>
+                        <li><i class="fa fa-envelope-o"></i>
+                            <a href="#">info@yourdomain.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="off-canvas-social-widget">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+            <!-- offcanvas widget area end -->
+        </div>
+    </div>
+</aside>
+<!-- off-canvas menu end -->
+
+
+<!-- main wrapper start -->
+<main>
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area common-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-wrap">
+                        <nav aria-label="breadcrumb">
+                            <h1>shop</h1>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                <li class="breadcrumb-item active" aria-current="page">shop</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb area end -->
+
+    <!-- page main wrapper start -->
+    <div class="shop-main-wrapper section-space pb-0">
+        <div class="container">
+            <div class="row">
+                <!-- sidebar area start -->
+                <div class="col-lg-3 order-2 order-lg-1">
+                    <aside class="sidebar-wrapper">
+                        <!-- single sidebar start -->
+                        <div class="sidebar-single">
+                            <h3 class="sidebar-title">种类</h3>
+                            <div class="sidebar-body">
+                                <ul class="shop-categories">
+                                    <li><a href="#">茉莉 <span>10</span></a></li>
+                                    <li><a href="#">玫瑰 <span>5</span></a></li>
+                                    <li><a href="#">兰花 <span>8</span></a></li>
+                                    <li><a href="#">梅花 <span>4</span></a></li>
+                                    <li><a href="#">风信子 <span>5</span></a></li>
+                                    <li><a href="#">香草 <span>2</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+
+                        <!-- single sidebar start -->
+                        <div class="sidebar-single">
+                            <h3 class="sidebar-title">价格</h3>
+                            <div class="sidebar-body">
+                                <div class="price-range-wrap">
+                                    <div class="price-range" data-min="0" data-max="1000"></div>
+                                    <div class="range-slider">
+                                        <form action="#" class="d-flex align-items-center justify-content-between">
+                                            <div class="price-input">
+                                                <label for="amount">价格: </label>
+                                                <input type="text" id="amount">
+                                            </div>
+                                            <button class="filter-btn">过滤</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+
+                        <!-- single sidebar start -->
+                        <div class="sidebar-single">
+                            <h3 class="sidebar-title">品牌</h3>
+                            <div class="sidebar-body">
+                                <ul class="checkbox-container categories-list">
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Studio (3)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Hastech (4)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4">Quickiin (15)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Graphic corner
+                                                (10)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                            <label class="custom-control-label" for="customCheck5">devItems (12)</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+
+                        <!-- single sidebar start -->
+                        <div class="sidebar-single">
+                            <h3 class="sidebar-title">颜色</h3>
+                            <div class="sidebar-body">
+                                <ul class="checkbox-container categories-list">
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                            <label class="custom-control-label" for="customCheck12">black (20)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                            <label class="custom-control-label" for="customCheck13">red (6)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                            <label class="custom-control-label" for="customCheck14">blue (8)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                            <label class="custom-control-label" for="customCheck11">green (5)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                            <label class="custom-control-label" for="customCheck15">pink (4)</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+
+                        <!-- single sidebar start -->
+                        <div class="sidebar-single">
+                            <h3 class="sidebar-title">规格</h3>
+                            <div class="sidebar-body">
+                                <ul class="checkbox-container categories-list">
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck111">
+                                            <label class="custom-control-label" for="customCheck111">S (4)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck222">
+                                            <label class="custom-control-label" for="customCheck222">M (5)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck333">
+                                            <label class="custom-control-label" for="customCheck333">L (7)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck444">
+                                            <label class="custom-control-label" for="customCheck444">XL (3)</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+
+                        <!-- single sidebar start -->
+                        <div class="sidebar-banner">
+                            <div class="img-container">
+                                <a href="#">
+                                    <img src="/static/assets/img/banner/sidebar-banner.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single sidebar end -->
+                    </aside>
+                </div>
+                <!-- sidebar area end -->
+
+                <!-- shop main wrapper start -->
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="shop-product-wrapper">
+                        <!-- shop product top wrap start -->
+                        <div class="shop-top-bar">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 col-md-6 order-2 order-md-1">
+                                    <div class="top-bar-left">
+                                        <div class="product-view-mode">
+                                            <a class="active" href="#" data-target="grid-view" data-toggle="tooltip"
+                                               title="Grid View"><i class="fa fa-th"></i></a>
+                                            <a href="#" data-target="list-view" data-toggle="tooltip" title="List View"><i
+                                                    class="fa fa-list"></i></a>
+                                        </div>
+                                        {#                                        <div class="product-amount">#}
+                                        {#                                            <p>Showing 1–5 of 8 results</p>#}
+                                        {#                                        </div>#}
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                                    <div class="top-bar-right">
+                                        <div class="product-short">
+                                            <p>排序方式 : </p>
+                                            <select class="nice-select" name="sortby">
+                                                <option value="trending">默认</option>
+                                                <option value="sales">名字 (A - Z)</option>
+                                                <option value="sales">名字 (Z - A)</option>
+                                                <option value="rating">价格 (低 &gt; 高)</option>
+                                                <option value="date">Rating (最低)</option>
+                                                <option value="price-asc">类型 (A - Z)</option>
+                                                <option value="price-asc">类型 (Z - A)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- shop product top wrap start -->
+
+                        <!-- product item list wrapper start -->
+                        <div class="shop-product-wrap grid-view row mbn-40">
+                            <!-- product single item start -->
+                            <div class="col-md-4 col-sm-6">
+                                {% for goods in goods_dict %}
+                                <!-- product grid start -->
+                                <div class="product-item">
+                                    <figure class="product-thumb">
+                                        <a href="{% url 'Shop:detail'  gid=goods.id %}">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="button-group">
+                                            <a href="#" data-toggle="tooltip" data-placement="left"
+                                               title="Add to wishlist"><i class="lnr lnr-heart"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" data-placement="left" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i></a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-caption">
+                                        <p class="product-name">
+                                            <a href="product-details.html">{{ goods.sketch }}</a>
+                                        </p>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product grid end -->
+
+                                <!-- product list item end -->
+                                <div class="product-list-item">
+                                    <figure class="product-thumb">
+                                        <a href="product-details.html">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-content-list">
+                                        <h5 class="product-name"><a href="product-details.html">Flowers daisy pink
+                                            stick</a></h5>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                        <p>{{ goods.description }}
+                                        </p>
+                                        <div class="button-group-list">
+                                            <a class="btn-big" href="#" data-toggle="tooltip" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i>加入购物车</a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" title="Add to wishlist"><i
+                                                    class="lnr lnr-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product list item end -->
+                                {% endfor %}
+                            </div>
+                            <!-- product single item start -->
+
+                            <!-- product single item start -->
+                            <div class="col-md-4 col-sm-6">
+                                {% for goods in goods_dict %}
+                                <!-- product grid start -->
+                                <div class="product-item">
+                                    <figure class="product-thumb">
+                                        <a href="{% url 'Shop:detail' gid=goods.id %}">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="button-group">
+                                            <a href="#" data-toggle="tooltip" data-placement="left"
+                                               title="Add to wishlist"><i class="lnr lnr-heart"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" data-placement="left" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i></a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-caption">
+                                        <p class="product-name">
+                                            <a href="product-details.html">{{ goods.sketch }}</a>
+                                        </p>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product grid end -->
+
+                                <!-- product list item end -->
+                                <div class="product-list-item">
+                                    <figure class="product-thumb">
+                                        <a href="{% url 'Shop:detail' gid=goods.id %}">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-content-list">
+                                        <h5 class="product-name"><a href="product-details.html">Flowers daisy pink
+                                            stick</a></h5>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                        <p>{{ goods.description }}
+                                        </p>
+                                        <div class="button-group-list">
+                                            <a class="btn-big" href="#" data-toggle="tooltip" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i>加入购物车</a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" title="Add to wishlist"><i
+                                                    class="lnr lnr-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product list item end -->
+                                {% endfor %}
+                            </div>
+                            <!-- product single item start -->
+
+                            <!-- product single item start -->
+                            <div class="col-md-4 col-sm-6">
+                                {% for goods in goods_dict %}
+                                <!-- product grid start -->
+                                <div class="product-item">
+                                    <figure class="product-thumb">
+                                        <a href="{% url 'Shop:detail' gid=goods.id %}">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="button-group">
+                                            <a href="#" data-toggle="tooltip" data-placement="left"
+                                               title="Add to wishlist"><i class="lnr lnr-heart"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" data-placement="left" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i></a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-caption">
+                                        <p class="product-name">
+                                            <a href="product-details.html">{{ goods.sketch }}</a>
+                                        </p>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product grid end -->
+
+                                <!-- product list item end -->
+                                <div class="product-list-item">
+                                    <figure class="product-thumb">
+                                        <a href="{% url 'Shop:detail' gid=goods.id %}">
+                                            <img class="pri-img" src="{{ goods.pri_img }}" alt="product">
+                                            <img class="sec-img" src="{{ goods.sec_img }}" alt="product">
+                                        </a>
+                                        <div class="product-badge">
+                                            <div class="product-label new">
+                                                <span>new</span>
+                                            </div>
+                                            <div class="product-label discount">
+                                                <span>{{ goods.discount | discount }}</span>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <div class="product-content-list">
+                                        <h5 class="product-name"><a href="product-details.html">Flowers daisy pink
+                                            stick</a></h5>
+                                        <div class="price-box">
+                                            <span class="price-regular">${{ goods.price | final_price:goods.discount }}</span>
+                                            <span class="price-old"><del>${{ goods.price }}</del></span>
+                                        </div>
+                                        <p>{{ goods.description }}
+                                        </p>
+                                        <div class="button-group-list">
+                                            <a class="btn-big" href="#" data-toggle="tooltip" title="Add to Cart"><i
+                                                    class="lnr lnr-cart"></i>加入购物车</a>
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"><span
+                                                    data-toggle="tooltip" title="Quick View"><i
+                                                    class="lnr lnr-magnifier"></i></span></a>
+                                            <a href="#" data-toggle="tooltip" title="Add to wishlist"><i
+                                                    class="lnr lnr-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product list item end -->
+                                {% endfor %}
+                            </div>
+                            <!-- product single item start -->
+                        </div>
+                        <!-- product item list wrapper end -->
+
+                        <!-- start pagination area -->
+                        <div class="paginatoin-area text-center">
+                            <ul class="pagination-box">
+                                <li><a class="previous" href="#"><i class="lnr lnr-chevron-left"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a class="next" href="#"><i class="lnr lnr-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- end pagination area -->
+                    </div>
+                </div>
+                <!-- shop main wrapper end -->
+            </div>
+        </div>
+    </div>
+    <!-- page main wrapper end -->
+</main>
+<!-- main wrapper end -->
+
+<!-- Start Footer Area Wrapper -->
+{% include 'div_source/footer.html' %}
+<!-- End Footer Area Wrapper -->
+
+<!-- Quick view modal start -->
+<div class="modal" id="quick_view">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- product details inner end -->
+                <div class="product-details-inner">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <div class="product-large-slider">
+                                <div class="pro-large-img">
+                                    <img src="/static/assets/img/product/product-details-img1.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-large-img">
+                                    <img src="/static/assets/img/product/product-details-img2.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-large-img">
+                                    <img src="/static/assets/img/product/product-details-img3.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-large-img">
+                                    <img src="/static/assets/img/product/product-details-img4.jpg"
+                                         alt="product-details"/>
+                                </div>
+                            </div>
+                            <div class="pro-nav slick-row-10 slick-arrow-style">
+                                <div class="pro-nav-thumb">
+                                    <img src="/static/assets/img/product/product-details-img1.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-nav-thumb">
+                                    <img src="/static/assets/img/product/product-details-img2.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-nav-thumb">
+                                    <img src="/static/assets/img/product/product-details-img3.jpg"
+                                         alt="product-details"/>
+                                </div>
+                                <div class="pro-nav-thumb">
+                                    <img src="/static/assets/img/product/product-details-img4.jpg"
+                                         alt="product-details"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7">
+                            <div class="product-details-des quick-details">
+                                <h3 class="product-name">Orchid flower white stick</h3>
+                                <div class="ratings d-flex">
+                                    <span><i class="lnr lnr-star"></i></span>
+                                    <span><i class="lnr lnr-star"></i></span>
+                                    <span><i class="lnr lnr-star"></i></span>
+                                    <span><i class="lnr lnr-star"></i></span>
+                                    <span><i class="lnr lnr-star"></i></span>
+                                    <div class="pro-review">
+                                        <span>1 Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-regular">$70.00</span>
+                                    <span class="price-old"><del>$90.00</del></span>
+                                </div>
+                                <h5 class="offer-text"><strong>Hurry up</strong>! offer ends in:</h5>
+                                <div class="product-countdown" data-countdown="2019/08/25"></div>
+                                <div class="availability">
+                                    <i class="fa fa-check-circle"></i>
+                                    <span>200 in stock</span>
+                                </div>
+                                <p class="pro-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy
+                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                                <div class="quantity-cart-box d-flex align-items-center">
+                                    <h5>qty:</h5>
+                                    <div class="quantity">
+                                        <div class="pro-qty"><input type="text" value="1"></div>
+                                    </div>
+                                    <div class="action_link">
+                                        <a class="btn btn-cart2" href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                                <div class="useful-links">
+                                    <a href="#" data-toggle="tooltip" title="Compare"><i
+                                            class="lnr lnr-sync"></i>compare</a>
+                                    <a href="#" data-toggle="tooltip" title="Wishlist"><i
+                                            class="lnr lnr-heart"></i>wishlist</a>
+                                </div>
+                                <div class="like-icon">
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i>tweet</a>
+                                    <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>save</a>
+                                    <a class="google" href="#"><i class="fa fa-google-plus"></i>share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- product details inner end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Quick view modal end -->
+
+<!-- offcanvas search form start -->
+{% include 'div_source/search.html' %}
+<!-- offcanvas search form end -->
+
+<!-- offcanvas mini cart start -->
+{% include 'div_source/minicart.html' %}
+<!-- offcanvas mini cart end -->
+
+<!-- Scroll to top start -->
+<div class="scroll-top not-visible">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!-- Scroll to Top End -->
+
+<!-- All vendor & plugins & active js include here -->
+<!--All Vendor Js -->
+<script src="/static/assets/js/vendor.js"></script>
+<!-- Active Js -->
+<script src="/static/assets/js/active.js"></script>
+</body>
+
+</html>
