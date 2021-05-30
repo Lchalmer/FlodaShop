@@ -1,0 +1,43 @@
+"""FlodaShop URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.urls import path
+
+from Shop import views
+
+app_name = 'Shop'
+urlpatterns = [
+    # 首页
+    path('home/', views.HomeView.as_view(), name='home'),
+    # 店铺
+    path('shop/', views.ShopView.as_view(), name='shop'),
+    # 商品详情
+    path('detail/<int:gid>/', views.DetailView.as_view(), name='detail'),
+    # 加入购物车
+    path('addcart/<int:gid>/', views.AddCartView.as_view(), name='addcart'),
+    # 从购物车删除
+    path('delcart/<int:gid>/', views.DelCartView.as_view(), name='delcart'),
+
+    # API
+    # 添加商品
+    path('api/add/', views.AddGoodsView.as_view(), name='addgoods'),
+    # 添加品牌
+    path('api/brand/', views.AddBrandView.as_view(), name='addbrand'),
+    # 添加评论
+    path('api/review/', views.AddReviewView.as_view(), name='addreview'),
+    # 检索，更新，删除商品
+    path('api/handle/<int:pk>', views.HandleGoodsView.as_view(), name='handlegoods'),
+
+]

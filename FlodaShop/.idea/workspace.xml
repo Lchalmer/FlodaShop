@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3cd9e2c-55ff-42e4-8254-ac86825fde57" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Floda" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Floda" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rszfGUjcxa0yZZFgRoGT4A2AW7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlodaShop" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Accumulate\Project\Python\Django\FlodaShop\FlodaShop" />
+      <recent name="H:\Accumulate\Django\FlodaShop\static\signup" />
+      <recent name="H:\Accumulate\Django\FlodaShop\templates" />
+      <recent name="H:\Accumulate\Django\FlodaShop\static\login" />
+      <recent name="F:\Accumulate\Django\FlodaShop\static\assets\img\cart" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Accumulate\Project\Python\Django\FlodaShop\FlodaShop" />
+      <recent name="H:\Accumulate\Django\FlodaShop\Shop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.snowflake">
+    <configuration name="snowflake" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlodaShop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/snowflake.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlodaShop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FlodaShop" type="Python.DjangoServer" factoryName="Django server">
+      <module name="FlodaShop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.snowflake" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3cd9e2c-55ff-42e4-8254-ac86825fde57" name="Default Changelist" comment="" />
+      <created>1619705525557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619705525557</updated>
+      <workItem from="1619705529027" duration="5809000" />
+      <workItem from="1619743334305" duration="19153000" />
+      <workItem from="1619776097612" duration="539000" />
+      <workItem from="1619779731226" duration="6667000" />
+      <workItem from="1619835634526" duration="28094000" />
+      <workItem from="1619930559534" duration="1797000" />
+      <workItem from="1620047908647" duration="12281000" />
+      <workItem from="1620102558058" duration="14260000" />
+      <workItem from="1620146791201" duration="647000" />
+      <workItem from="1620647160500" duration="2194000" />
+      <workItem from="1620649997297" duration="945000" />
+      <workItem from="1620787099899" duration="14845000" />
+      <workItem from="1620866162340" duration="13579000" />
+      <workItem from="1620976771580" duration="2865000" />
+      <workItem from="1621080107038" duration="598000" />
+      <workItem from="1621130539706" duration="33000" />
+      <workItem from="1621155136713" duration="2289000" />
+      <workItem from="1621425454024" duration="110000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620050419128">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="379" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1620050419128" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1620649850575">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1620649850575" />
+    <state width="1234" height="276" key="GridCell.Tab.0.bottom" timestamp="1619882075973">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="276" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619882075973" />
+    <state width="1234" height="276" key="GridCell.Tab.0.center" timestamp="1619882075973">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="276" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619882075973" />
+    <state width="1234" height="276" key="GridCell.Tab.0.left" timestamp="1619882075973">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="276" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619882075973" />
+    <state width="1234" height="276" key="GridCell.Tab.0.right" timestamp="1619882075973">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1234" height="276" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619882075973" />
+    <state x="956" y="317" key="SettingsEditor" timestamp="1621425468607">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="956" y="317" key="SettingsEditor/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1621425468607" />
+    <state x="-1147" y="0" width="1044" height="815" maximized="true" key="dock-window-1" timestamp="1620114288204">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="790" y="180" width="1029" height="815" key="dock-window-1/-1366.0.1366.728/0.0.2560.1400@-1366.0.1366.728" timestamp="1619870110244" />
+    <state x="-1147" y="0" width="1044" height="815" maximized="true" key="dock-window-1/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1620114288204" />
+    <state x="-1274" y="90" width="1049" height="815" maximized="true" key="dock-window-2" timestamp="1619882214530">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1274" y="90" width="1049" height="815" maximized="true" key="dock-window-2/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619882214530" />
+    <state x="302" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1619881720643">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="302" y="322" width="672" height="678" key="search.everywhere.popup/-1366.0.1366.728/0.0.2560.1400@0.0.2560.1400" timestamp="1619881720643" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FlodaShop$snowflake.coverage" NAME="snowflake Coverage Results" MODIFIED="1620977009945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlodaShop$test.coverage" NAME="test Coverage Results" MODIFIED="1619881027742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

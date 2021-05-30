@@ -1,0 +1,65 @@
+<div class="offcanvas-minicart-wrapper">
+        <div class="minicart-inner">
+            <div class="offcanvas-overlay"></div>
+            <div class="minicart-inner-content">
+                <div class="minicart-close">
+                    <i class="lnr lnr-cross"></i>
+                </div>
+                <div class="minicart-content-box">
+                    <div class="minicart-item-wrapper">
+                    {% load myfilters %}
+                        <ul>
+                            {% for goods in clist %}
+                            <li class="minicart-item">
+                                <div class="minicart-thumb">
+                                    <a href="{% url 'Shop:detail' gid=goods.id %}">
+                                        <img src="{{ goods.pri_img }}" alt="product">
+                                    </a>
+                                </div>
+                                <div class="minicart-content">
+                                    <h3 class="product-name">
+                                        <a href="{% url 'Shop:detail' gid=goods.id %}">{{ goods.sketch }}</a>
+                                    </h3>
+                                    <p>
+                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                        <span class="cart-price">${{ goods.price | final_price:goods.discount }}</span>
+                                    </p>
+                                </div>
+                                <button class="minicart-remove">
+                                    <a href="{% url 'Shop:delcart' gid=goods.id %}"><i class="lnr lnr-cross"></i></a>
+                                </button>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+
+                    <div class="minicart-pricing-box">
+                        <ul>
+                            <li>
+                                <span>小计</span>
+                                <span><strong>${{ total }}</strong></span>
+                            </li>
+                            <li>
+                                <span>环保税(2.00%)</span>
+                                <span><strong>${{ total | multiply_by:0.02}}</strong></span>
+                            </li>
+                            <li>
+                                <span>增值税(20.00%)</span>
+                                <span><strong>${{ total | multiply_by:0.2 }}</strong></span>
+                            </li>
+                            <li class="total">
+                                <span>合计</span>
+                                <span><strong>${{ final_total }}</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="minicart-button">
+                        <a href="#"><i class="fa fa-shopping-cart"></i> view cart</a>
+                        <a href="#"><i class="fa fa-share"></i> 结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
